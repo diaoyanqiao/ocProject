@@ -30,7 +30,7 @@
 	                	</#if>
                 	</a>
                 	<a href="javascript:void(0)" sortField="weight" class="search-sort-block <#if page.sortField?? && page.sortField == 'weight'>search-sort-block-cur</#if>" >
-                		<span>推荐权重</span>
+                		<span>班级</span>
                 		<#if page.sortField?? && page.sortField == 'weight'>
 	                	<#if page.sortDirection == 'DESC'><span>▼</span><#else><span>▲</span></#if>
 	                	</#if>
@@ -89,7 +89,7 @@
 										<p>${item.updateTime?string('yyyy-MM-dd HH:mm')}</p>
 									</td>
 									<td style="width:120px;">
-										<p>推荐权重：${item.weight!}</p> 
+										<p>班级：${item.weight!}</p>
 										<p><a href="javascript:void(0)" onclick="doSale(${item.id!},${item.onsale!});"><#if item.onsale == 1>课程下架<#else>发布上架</#if></a></p>
 										<p><a href="javascript:void(0)" onclick="doDelete(${item.id!});">删除</a></p> 
 									</td>
