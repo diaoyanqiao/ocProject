@@ -13,7 +13,7 @@ import com.online.college.core.consts.domain.ConstsCollege;
 import com.online.college.core.consts.service.IConstsCollegeService;
 
 /**
- * 网校管理
+ * 学校管理
  */
 @Controller
 @RequestMapping("/college")
